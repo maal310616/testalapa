@@ -1,94 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<style>
-  body{
-    background-image: url(https://images3.alphacoders.com/132/1328078.png);
-  }
-    </style>
-    <style>
-    <p style="color:pink">
-    </style>
-    
-    <style>
-#RādāmaisSaturs{
-  display: none;
-}
-    </style>
-<script>
-function radītsaturu(){
-  document.getElementById("RādamaisSaurs").style.display="block"
-  document.getElementById("PogaR").style.display="none"
-  document.getElementById("Mainās").innerHTML="Mainās teksts"
-}
-function pasleptSaturu(){
-  document.getElementById("RādamaisSaurs").style.display="block"
-  document.getElementById("RādamaisSaurs").style.display="none"
-}
-</script>
+<head>
+  <title>Mājaslappa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url(https://images3.alphacoders.com/132/1328078.png);
+      padding: 20px; /* Adding padding for better readability */
+    }
+
+    p {
+      color: pink;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="container text-centre">
-    <div class="row">
-      <div class="col">
-       <img src="https://www.dustygroove.com/images/products/a/armstr_loui_essential_106b.jpg"
-      <img src="https://www.corridan-gallery.com/images/JamesPaulBrown_Entertainment/Chalie_Parker-Dizzy_Gillespie_lrg.jpg" alt="W3Schools.com" width="704" height="500">
-       <table> 
-       </table>
-    
+  <div class="container">
     <h1>Paragrāfs</h1>
     <p><b>teksts</b></p>
-   
     <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>  
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <button id="RadmaisSaturs"onclick="paslēptSaturu()">Radīt mazāk</button> 
-    <div id="RadmaisSaturs"></div>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <button onclick="pasleptSaturu()"> Rādīt mazāk</button>
-    <img src="https://www.corridan-gallery.com/images/JamesPaulBrown_Entertainment/Chalie_Parker-Dizzy_Gillespie_lrg.jpg" alt="W3Schools.com" width="704" height="500">
-    <span>vdfnjnnnnjjkcfjcfcfcfcfcfcfcfcfjkzll</span>
+    <!-- ...Other content -->
+    <button onclick="radītSaturu()">Rādīt vairāk</button>
+    <div id="RādamaisSaturs" style="display: none;">
+      <!-- Additional content to show/hide -->
+    </div>
+    <!-- ...Other content -->
     <p><a href="https://rag.lv/">Rīgas Angļu ģimnāzijas mājaslapa</a></p>
-      </div>
-}
-<p style="color:pink">
-    <html>
-<head>
-    <style> 
-        table, th, td {
-          border: 1px solid black;
-        }
-        </style>
-        </head>
-        <body>
+
     <table>
-        <tr>
-          <td>Viens</td>
-          <td>Divi</td>
-          <td>tris</td>
-        </tr>
-        <tr>
-          <td>četri</td>
-          <td>pieci</td>
-          <td>seši</td>
-        </tr>
-      </table>
-      <p>1. jā </p>
+      <tr>
+        <td>Viens</td>
+        <td>Divi</td>
+        <td>tris</td>
+      </tr>
+      <tr>
+        <td>četri</td>
+        <td>pieci</td>
+        <td>seši</td>
+      </tr>
+    </table>
+    <p>1. jā</p>
+    <p>2. nē</p>
+    <p>3. varbūt</p>
+  </div>
 
-        <p>2. nē</p>
-
-        <p>3.varbūt</p>
-      </div>
-      </body>
+  <script>
+    function radītSaturu() {
+      document.getElementById("RādamaisSaturs").style.display = "block";
+    }
+  </script>
+</body>
 </html>
-<head>
  
   <title>Mājaslappa</title>
   <meta charset="utf-8">
