@@ -8,30 +8,50 @@
   <style>
     body {
       background-image: url(https://images3.alphacoders.com/132/1328078.png);
-      padding: 20px; /* Adding padding for better readability */
+      padding: 20px; 
     }
 
-    p {
-      color: pink;
-    }
+
+    
 
     table, th, td {
       border: 1px solid black;
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h1>Paragrāfs</h1>
-    <p><b>teksts</b></p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <!-- ...Other content -->
-    <button onclick="radītSaturu()">Rādīt vairāk</button>
-    <div id="RādamaisSaturs" style="display: none;">
-      <!-- Additional content to show/hide -->
-    </div>
-    <!-- ...Other content -->
-    <p><a href="https://rag.lv/">Rīgas Angļu ģimnāzijas mājaslapa</a></p>
+
+  <body style="background-image: url('ceļš/uz/jūsu/fona/attēlu.jpg');">
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-md-3">
+                <img id="mainImage" src="ceļš/uz/jūsu/attēlu.jpg" class="img-fluid" alt="Galvenais Attēls">
+            </div>
+            <div class="col-md-9">
+                <h1>1. Līmeņa Virsraksts</h1>
+                <h2>2. Līmeņa Virsraksts</h2>
+                <p>Teksts teksta blokā.</p>
+                <ol>
+                    <li>Saraksta vienums 1</li>
+                    <li>Saraksta vienums 2
+                        <ul>
+                            <li>Apakšsaraksta vienums 1</li>
+                            <li>Apakšsaraksta vienums 2</li>
+                        </ul>
+                    </li>
+                    <li>Saraksta vienums 3</li>
+                </ol>
+                <button onclick="rādītSaturs()">Rādīt saturu</button>
+                <div id="saturs" style="display: none;">
+                    <p>Kaut kāds saturs, ko rādīt.</p>
+                    <button onclick="slēptSaturs()">Slēpt saturu</button>
+                </div>
+                <button onclick="mainītElementaSaturs()">Mainīt elementa saturu</button>
+                <button onclick="mainītAttēlu()">Mainīt Attēlu</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
 
     <table>
       <tr>
@@ -82,7 +102,7 @@
     float: left;
     width: 30%;
     height: 300px; /
-    background: #ccc;
+    background-color: #ccc;
     padding: 20px;
   }
   
@@ -135,9 +155,7 @@
   <section>
     <nav>
       <ul>
-        <li><a href="#">London</a></li>
-        <li><a href="#">Paris</a></li>
-        <li><a href="#">Tokyo</a></li>
+      
       </ul>
     </nav>
     
