@@ -21,6 +21,23 @@
       border: 1px solid black;
     }
   </style>
+    <script>
+      function radītSaturu() {
+        document.getElementById("RādamaisSaturs").style.display = "block";
+      }
+      function rādītSaturs() {
+        document.getElementById("saturs").style.display = "block";
+      }
+      function slēptSaturs() {
+        document.getElementById("saturs").style.display = "none";
+      }
+
+      function mainītAttēlu() {
+        var imageElement = document.getElementById("mainImage");
+        imageElement.src = "https://images.unsplash.com/photo-1619963225112-a3cba72baeca?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D";
+      }
+    </script>
+  
 </head>
 <body>
   <div class="container bg-light">
@@ -52,12 +69,6 @@
         <button onclick="mainītAttēlu()">Mainīt Attēlu</button>
       </div>
   
-      <script>
-        function mainītAttēlu() {
-          var imageElement = document.getElementById("mainImage");
-          imageElement.src = "https://images.unsplash.com/photo-1619963225112-a3cba72baeca?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D";
-        }
-      </script>
   <div class="container">
     <h1>Paragrāfs</h1>
     <p><b>teksts</b></p>
@@ -65,7 +76,7 @@
     <!-- ...Other content -->
     <button onclick="radītSaturu()">Rādīt vairāk</button>
     <div id="RādamaisSaturs" style="display: none;">
-      <!-- Additional content to show/hide -->
+      <!-- Additional content to show/hide --> jhajshdjashdjashd
     </div>
     <div class="row">
       <div class="col-md-8">
@@ -88,19 +99,6 @@
     </div>
   </div>
 
-  <script>
-    function radītSaturu() {
-      document.getElementById("RādamaisSaturs").style.display = "block";
-    }
-    function rādītSaturs() {
-      var satursDiv = document.getElementById("saturs");
-      satursDiv.style.display = "block";
-    }
-    function SlēptSaturs() 
-      var satursDiv = document.getElementById("saturs");
-      satursDiv.style.display = "none";
-  
-  </script>
 </body>
 </html>
  
