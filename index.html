@@ -31,6 +31,9 @@
       function slēptSaturs() {
         document.getElementById("saturs").style.display = "none";
       }
+      function rādītMazāk(){
+        document.getElementById("saturs").style.display = "none";
+      }
 
       function mainītAttēlu() {
         var imageElement = document.getElementById("mainImage");
@@ -79,7 +82,9 @@
     <h1>Paragrāfs</h1>
     <p><b>teksts</b></p>
     <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    
+    <button onclick="mainītSaturu()">MainītSaturu</button>
+    <div id="mainītSaturu" style="display: none;">
+    <p>mainās saturs</p>
     <button onclick="radītSaturu()">Rādīt vairāk</button>
     <div id="RādamaisSaturs" style="display: none;">
       <p>jhajshdjashdjashd</p>
