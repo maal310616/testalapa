@@ -56,10 +56,16 @@
       function rādītMazāk() {
         document.getElementById("RādamaisSaturs").style.display = "none";
       }
+      function mainītSaturu() {
+        var textElement = document.getElementById("mainītSaturu");
+        textElement.textContent = "mainītSaturu";
+      }
     </script>
-
+    
 </head>
 <body>
+  <p id="mainītSaturu">Nomainās saturst</p>
+  <button onclick="mainītSaturu()">mainītSaturu</button>
   <div class="container bg-light">
     <div class="row">
       <div class="col-md-3">
@@ -85,8 +91,9 @@
           <p>Kaut kāds saturs, ko rādīt.</p>
           <button onclick="slēptSaturs()">Slēpt saturu</button>
           <button onclick="mainītAttēlu()">Mainīt Attēlu</button>
-          <button onclick="mainītSākotējoAttēlu()">Mainīt sākotējo attēlu</button>
           <button onclick="mainītSaturu()">MainītSaturu</button>
+
+          <button onclick="mainītSākotējoAttēlu()">Mainīt sākotējo attēlu</button>
           <button onclick="rādītMazāk()">Rādīt mazāk</button>
         </div>
       </div>
@@ -114,4 +121,6 @@
             <td>četri</td>
             <td>pieci</td>
             <td>seši</td>
+
+
          
