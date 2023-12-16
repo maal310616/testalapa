@@ -50,52 +50,38 @@
   </style>
 </head>
 <body>
-
-<div class="container mt-3">
-  <div class="row">
-    <div class="col-md-3">
-      <h1>Heading 1</h1>
-      <p>hblhbybyhbph</p>
-      <img src="https://images.unsplash.com/photo-1619963225112-a3cba72baeca?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
-    </div>
-    <div class="col-md-9">
-      <h2>Heading 2</h2>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2
-          <ul>
-            <li>Subitem 1</li>
-            <li>Subitem 2</li>
-          </ul>
-        </li>
-        <li>Item 3</li>
-      </ul>
-      <button onclick="RādītSaturu()">Rādīt Saturu</button>
-      <div id="toggleContent" style="display: none;">
-        <p>Additional content here.</p>
-        <button onclick="SlēptSaturu()">Slēpt Saturu</button>
-        <button onclick="MainītSaturu()">Mainīt Saturu</button>
-        <button onclick="changeImage()">Change Image</button>
+  <body>
+  <div class="container bg-light">
+    <div class="row">
+      <div class="col-md-3">
+        <p id="mainītSaturu">Nomainās saturst</p>
+        <button onclick="mainītSaturu()">mainītSaturu</button>
+        <img id="mainImage" src="https://psychopedia.in/wp-content/uploads/2022/09/SKILLS-NEEDED-FOR-PROFESSIONAL-DEVELOPMENT-AS-A-PSYCHOLOGIST-1024x640.png" class="img-fluid" alt="Galvenais Attēls">
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-          </tr>
+      <div class="col-md-9">
+        <h1>1. Krāsas</h1>
+        <h2><i>2. Kā tās ietekmē mūs?</i></h2>
+        <p>Teksts </p>
+        <ol>
+          <p><a href="https://www.rag.lv"></a></p>
+          <li>Saraksta vienums </li>
+          <li>Saraksta vienums </li>
+            <ul>
+              <li>Apakšsaraksta vienums 1</li>
+              <li>Apakšsaraksta vienums 2</li>
+            </ul>
+          </li>
+          <li>Saraksta vienums 3</li>
+        </ol>
+        <button onclick="rādītSaturs()">Rādīt saturu</button>
+        <div id="saturs" style="display: none;">
+          <p>Kaut kāds saturs, ko rādīt.</p>
+          <button onclick="slēptSaturs()">Slēpt saturu</button>
+          <button onclick="mainītAttēlu()">Mainīt Attēlu</button>
+          <button onclick="mainītSaturu()">MainītSaturu</button>
+
           <button onclick="mainītSākotējoAttēlu()">Mainīt sākotējo attēlu</button>
           <button onclick="rādītMazāk()">Rādīt mazāk</button>
-        </div>
       </div>
     </div>
   </div>
