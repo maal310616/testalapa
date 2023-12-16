@@ -6,55 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
-    <body>
-   <div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <h1>Heading 1</h1>
-      <p>Paragraph content goes here.</p>
-      <img id="mainImage" src="https://images.unsplash.com/photo-1619963225112-a3cba72baeca?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Image Description">
-    </div>
-    <div class="col-md-9">
-      <h2>Heading 2</h2>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2
-          <ul>
-            <li>Subitem 1</li>
-            <li>Subitem 2</li>
-          </ul>
-        </li>
-        <li>Item 3</li>
-      </ul>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8">
-      <table>
-        <thead>
-          <tr>
-            <th>Viens</th>
-            <th>Divi</th>
-            <th>Trīs.</th>
-            <th>Četri.</th>
-            <th>Pieci.</th>
-            <th>Seši.</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-            <td>Data 5</td>
-            <td>Data 6</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+    <style>
+    body {
+      background-image: url('https://colibriwp.com/blog/wp-content/uploads/2019/06/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg');
+      background-color: yellow; 
+      color: rgb(15, 14, 14);
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    .color-description {
+      margin-bottom: 20px;
+    }
+    <div class="container bg-light">
+    <div class="row">
+      <div class="col-md-3">
+        <p id="mainītSaturu">Nomainās saturst</p>
+        <button onclick="mainītSaturu()">mainītSaturu</button>
+        <img id="mainImage" src="https://psychopedia.in/wp-content/uploads/2022/09/SKILLS-NEEDED-FOR-PROFESSIONAL-DEVELOPMENT-AS-A-PSYCHOLOGIST-1024x640.png" class="img-fluid" alt="Galvenais Attēls">
+      </div>
+      <div class="col-md-9">
+        <h1>1. Krāsas</h1>
+        <h2><i>2. Kā tās ietekmē mūs?</i></h2>
+        <p>Teksts </p>
+        <ol>
+          <p><a href="https://www.rag.lv"></a></p>
+          <li>Saraksta vienums </li>
+          <li>Saraksta vienums </li>
+            <ul>
+              <li>Apakšsaraksta vienums 1</li>
+              <li>Apakšsaraksta vienums 2</li>
+            </ul>
+          </li>
+          <li>Saraksta vienums 3</li>
+        </ol>
+        <button onclick="rādītSaturs()">Rādīt saturu</button>
+        <div id="saturs" style="display: none;">
+          <p>Kaut kāds saturs, ko rādīt.</p>
+          <button onclick="slēptSaturs()">Slēpt saturu</button>
+          <button onclick="mainītAttēlu()">Mainīt Attēlu</button>
+          <button onclick="mainītSaturu()">MainītSaturu</button>
   </style>
 </head>
 <body>
@@ -101,34 +93,71 @@
             <td>Data 1</td>
             <td>Data 2</td>
           </tr>
-          <!-- Additional table rows -->
-        </tbody>
+          <button onclick="mainītSākotējoAttēlu()">Mainīt sākotējo attēlu</button>
+          <button onclick="rādītMazāk()">Rādīt mazāk</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Paragrāfs</h1>
+    <p><b>teksts</b></p>
+    <p id="mainText">NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    
+    <button onclick="radītSaturu()">Rādīt vairāk</button>
+    <div id="RādamaisSaturs" style="display: none;">
+      <p>jhajshdjashdjashd</p>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <table class="table">
+          <tr>
+            <td>Viens</td>
+            <td>Divi</td>
+            <td>tris</td>
+          </tr>
+          <tr>
+            <td>četri</td>
+            <td>pieci</td>
+            <td>seši</td>
+          </tr>
       </table>
     </div>
   </div>
 </div>
 
-<!-- Bootstrap JS CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Custom JavaScript -->
 <script>
-  function RādītSaturu() {
-    var content = document.getElementById("RādītSaturu");
-    content.style.display = (content.style.display === "none") ? "block" : "none";
-  }
+      function radītSaturu() {
+        var content = document.getElementById("RādamaisSaturs");
+        if (content.style.display === "none") {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      }
 
-  function SlēptSaturu() {
-    document.getElementById("RādītSaturu").style.display = "none";
-  }
+      function rādītSaturs() {
+        document.getElementById("saturs").style.display = "block";
+      }
+
+      function slēptSaturs() {
+        document.getElementById("saturs").style.display = "none";
+      }
+      function mainītAttēlu() {
+        var imageElement = document.getElementById("mainImage");
+        imageElement.src = "https://images.unsplash.com/photo-1619963225112-a3cba72baeca?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D";
+      }
+
+      function mainītSākotējoAttēlu() {
+        var imageElement = document.getElementById("mainImage");
+        imageElement.src = "https://psychopedia.in/wp-content/uploads/2022/09/SKILLS-NEEDED-FOR-PROFESSIONAL-DEVELOPMENT-AS-A-PSYCHOLOGIST-1024x640.png";
+      }
 
   function MainītSaturu() {
     document.getElementById("MainītSaturu").innerHTML = "New content";
   }
 
-  function changeImage() {
-    document.querySelector('img').src = 'path/to/your/updated/image.jpg';
-  }
+
 </script>
 
 </body>
