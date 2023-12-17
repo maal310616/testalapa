@@ -29,22 +29,21 @@
         document.getElementById("PogaRaadiit").style.display = "block";
       }
       function mainaBildes() {
-        var bilde = document.getElementById("bilde1");
-        if (bilde.src.includes("https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg")
-      }
-          bilde.src ="https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg";
-        else {
-          bilde.src ="https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg";
-        }
-    
-      function mainaas() {
-        var mainasTeksts = document.getElementById("mainasTeksts");
-        if (mainasTeksts.innerHTML ==="Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. Divkāršu apziedni veido vainaglapas un kauslapas. Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni.Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu") {
-          mainasTeksts.innerHTML ="Ietekme un nozīme literatūrā un sabiedrībā- “Pērļu zvejnieks” sarakstīts, ievērojot virkni romantisma literārajai tradīcijai būtisku aspektu un īpaši akcentējot reālās dzīves un ideālu pasaules pretstatījumu, kā arī atklājot ikdienai nepiemēroto, trauslo un jūtīgo centrālā tēla personību. J. Poruka idejas sakņojas arī mūzikas un filozofijas studijās, viņu ietekmējuši grieķu filozofa Platona (Πλάτων) uzskati, īpaši Platona darbs “Dzīres” (Συμπόσιον, 385.–370. g. p. m. ē.) un tajā paustā mīlestības filozofija. Saskaņā ar romantisma estētiku “Pērļu zvejniekā” izmantots ceļa motīvs, kas latviešu rakstniecībā pirmo reizi izvērsts tik plaši. Autors atklājas arī kā modernisma rakstniecības priekštecis, pievēršot uzmanību mākslas tēmai un tās refleksijai varoņu psiholoģiskajā portretējumā.";
-        } else {
-          mainasTeksts.innerHTML ="Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. Divkāršu apziedni veido vainaglapas un kauslapas. Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni.Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu";
-        }
-      }
+  var bilde = document.getElementById("bilde1");
+  if (bilde.src.includes("https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg")) {
+    bilde.src = "https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg";
+  } else {
+    bilde.src = "https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg";
+  }
+}
+function mainaas() {
+  var mainasTeksts = document.getElementById("mainasTeksts");
+  if (mainasTeksts.innerHTML.trim() === "Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. Divkāršu apziedni veido vainaglapas un kauslapas. Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni. Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu") {
+    mainasTeksts.innerHTML = "Ietekme un nozīme literatūrā un sabiedrībā... (your second text here)";
+  } else {
+    mainasTeksts.innerHTML = "Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs... (your first text here)";
+  }
+}
     </script>
   </head>
   <body>
@@ -114,28 +113,8 @@
         </div>
       </div>
     </div>
-  
 
-            <div class="row text-center m-5">
-              <div class="col">
-                <button type= "button" class = "btn  btn-success btn-lg " onclick="RadmaisSaturs()">Radīt Saturu</button>
-              </div>
-              <div class="col">
-                <button type= "button" class = "btn  btn-success btn-lg " onclick="paslēptSaturu()">Slēpt Saturs</button>
-              </div>
-              <div class="col">
-                <button type= "button" class = "btn  btn-success btn-lg " onclick="mainītAttēlu()">Mainīt Attēlu</button>
-              </div>
-              <div class="col">
-                <button type= "button" class = "btn  btn-success btn-lg " onclick="mainītSākotējoAttēlu()">Mainīt sākotējo attēlu</button>
-              </div>
-            </div>
-
-
-
-
-
-
-
+   </div>
+      </div>
   </body>
 
