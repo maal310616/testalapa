@@ -8,104 +8,111 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <style>
+      body {
+        background-image: url(https://files.123freevectors.com/wp-content/original/147157-abstract-pink-blurred-bokeh-background-image.jpg);
+        background-size: cover;
       }
-      #sakums {
-        padding-left: 70px;
+      p,ol,h3,h4,h1,h2,a button {
+        background-color: antiquewhite;
       }
-
-      body{
-        background-color: rgb(255, 237, 214);
-      }
-  
-      .table-gap {
-        margin-bottom: 20px; 
-      }
-
-      .center {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
+      #RādamaisSaturs {
+        display: none;
       }
     </style>
     <script>
-
- function rādītSaturs() {
-        document.getElementById("RādamaisSaurs").style.display = "block";
- }
-</script>
-
-<script>
-
-        function slēptSaturs() {
-        document.getElementById("RādamaisSaurs").style.display = "none";
-        document.getElementById("RādamaisSaurs").style.display="block"
- }
-</script>
-
-<script>
- function mainītAttēlu() {
-        var imageElement = document.getElementById("mainImage");
-        imageElement.src = imageElement.src = "https://images.unsplash.com/photo-1619963225112-a3cba72baeca?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D";
- }
-</script>
-
-<script>
- function mainītSākotējoAttēlu() {
-        var imageElement = document.getElementById("mainImage");
-        imageElement.src = "https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg";
- }
-</script>
-
+      function raditsaturu() {
+        document.getElementById("RādamaisSaturs").style.display = "block";
+        document.getElementById("PogaRaadiit").style.display = "none";
+      }
+      function pasleptsaturu() {
+        document.getElementById("RādamaisSaturs").style.display = "none";
+        document.getElementById("PogaRaadiit").style.display = "block";
+      }
+      function mainaBildes() {
+        var bilde = document.getElementById("bilde1");
+        if (bilde.src.includes("https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg")
+      }
+          bilde.src ="https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg";
+        else {
+          bilde.src ="https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg";
+        }
+    
+      function mainaas() {
+        var mainasTeksts = document.getElementById("mainasTeksts");
+        if (mainasTeksts.innerHTML ==="Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. Divkāršu apziedni veido vainaglapas un kauslapas. Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni.Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu") {
+          mainasTeksts.innerHTML ="Ietekme un nozīme literatūrā un sabiedrībā- “Pērļu zvejnieks” sarakstīts, ievērojot virkni romantisma literārajai tradīcijai būtisku aspektu un īpaši akcentējot reālās dzīves un ideālu pasaules pretstatījumu, kā arī atklājot ikdienai nepiemēroto, trauslo un jūtīgo centrālā tēla personību. J. Poruka idejas sakņojas arī mūzikas un filozofijas studijās, viņu ietekmējuši grieķu filozofa Platona (Πλάτων) uzskati, īpaši Platona darbs “Dzīres” (Συμπόσιον, 385.–370. g. p. m. ē.) un tajā paustā mīlestības filozofija. Saskaņā ar romantisma estētiku “Pērļu zvejniekā” izmantots ceļa motīvs, kas latviešu rakstniecībā pirmo reizi izvērsts tik plaši. Autors atklājas arī kā modernisma rakstniecības priekštecis, pievēršot uzmanību mākslas tēmai un tās refleksijai varoņu psiholoģiskajā portretējumā.";
+        } else {
+          mainasTeksts.innerHTML ="Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. Divkāršu apziedni veido vainaglapas un kauslapas. Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni.Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu";
+        }
+      }
+    </script>
   </head>
   <body>
-    <div class="container">
-      <div id="sakums" class="row p-3">
-          <div class="col" style="text-align:start;">
-            <h1 class = "text-center">Mājaslapa</h1>
-            <h2 class = "text-center">mēģinājums</h2>
-            <p><a href="https://rag.lv/">Rīgas Angļu ģimnāzijas mājaslapa</a></p>
-            <div id="RadmaisSaturs" style="display: none;"></div>
-            <p style="text-align: start;"> gcgfkfykyl,yfydftd</i></p>  
-
-            <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>  
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
-    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>     
-            <ul>
-              <li><b>viens</b></li>
-              <li><b>divi </b></li>
-              <li><b>trīs </b></li>
-             </ul>  
-             <table style="border-collapse: collapse; border: 1px solid black;">
+    <div class="container-fluid">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h1 class="rounded-5 p-2">''Virsraksts''</h1>
+            <h2 class="rounded-5 p-2">Mēģinājums</h2>
+            <p class="rounded-5 p-5">
+              Zieds ir segsēkļu dzimumvairošanās orgāns, kura funkcija ir pēc apputeksnēšanās ražot sēklas. Ziediem izšķir vairākas daļas: 
+              ziedkātu, ziedgultni, apziedni, androceju un gineceju.Ziedi galvenokārt atšķiras pēc veida, izmēra un krāsas.
+               Dažiem ziedaugiem ziedi aug uz atsevišķiem kātiem, bet vairumam tie atrodas uz viena kāta un veido ziedkopas.
+            </p>
+            <button class="rounded-5 p-2" id="PogaRaadiit" onclick="raditsaturu()" style="display: block;">Rādīt vairāk</button>
+            <div id="RādamaisSaturs" style="display: none;">
+              <p class="rounded-5 p-2">
+                Sinonīms vārdam "zieds" ir puķe, lai gan precīzāk ar šo apzīmējumu apzīmē ziedu ar kātu un lapām.
+              </p>
+              <button class="rounded-5 p-2" onclick="pasleptsaturu()">Rādīt mazāk</button>
+            </div>
+            <p class="rounded-5 p-4" id="mainasTeksts">
+              Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. 
+              Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. 
+              Divkāršu apziedni veido vainaglapas un kauslapas. 
+              Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni.
+               Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu
+            </p>
+            <button class="rounded-5 p-3" onclick="mainaas()">Mainīt tekstu</button>
+          </div>
+          <div class="col">
+            <img id="bilde1" src=<img src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg" class="img-fluid" alt="ziedi">
+            <button class="rounded-5 p-3" onclick="mainaBildes()">Mainīt bildi</button>
+            <h3 class="rounded-5 p-2">Ziedi cilvēces vēsturē un kultūrā</h3>
+            <table class="table table-dark table-hover">
+              <style>
+                table,
+                th,
+                td {
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                }
+              </style>
+              <tbody><tr>
+                <th>viens</th>
+                <th>divi</th>
+                <th>trīs</th>
+              </tr>
               <tr>
-<td>viens</td>
-
-<td>divi</td>
-
-<td>trīs</td>
-</tr>
-<tr>
-<td>četri</td>
-
-<td>pieci</td>
-
-<td>seši</td>
-</tr>
-             </table>
-             <p>1. jā</p>
-             <p>2. nē</p>
-             <p>3. varbūt</p>
-           </div>
+                <td>četri</td>
+                <td>pieci</td>
+                <td>seši</td>
+              </tr>
+            </tbody></table>
+            <a href="https://www.rag.lv/" class="rounded-5 p-2"> raģ.lv</a>
+            <h4 class="rounded-5 p-2">Saraksts</h4>
+            <ol class="rounded-5 p-5">
+              <li>jā</li>
+              <li>nē</li>
+              <li>varbūt</li>
+              <li>Tabula</li>
+              <li>RAĢ mājaslapa</li>
+            </ol>
           </div>
-          <div class="col" style="text-align-last: right;">
-            <img src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg" class="img-fluid" alt="kutkas" >
-          </div>
+        </div>
       </div>
+    </div>
+  
 
             <div class="row text-center m-5">
               <div class="col">
