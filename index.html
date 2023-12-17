@@ -8,7 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <style>
-      
+       body{background-image: url(https://wallpapers.com/images/hd/1920-x-1080-night-city-blur-pyuj0kgu1m2m3jmi.jpg);
+      }
       #sakums {
         padding-left: 70px;
       }
@@ -30,7 +31,9 @@
     </style>
     <script>
  function radītSaturu() {
-  document.getElementById("RādamaisSaturs");classList.add("d-none")
+  document.getElementById("RādamaisSaurs").style.display="block"
+
+ 
  }
  </script>
 
@@ -43,7 +46,8 @@
 <script>
 
         function slēptSaturs() {
-        document.getElementById("saturs").style.display = "none";
+        document.getElementById("RādamaisSaurs").style.display = "none";
+        document.getElementById("RādamaisSaurs").style.display="block"
  }
 </script>
 
@@ -68,7 +72,18 @@
           <div class="col" style="text-align:start;">
             <h1 class = "text-center">Mājaslapa</h1>
             <h2 class = "text-center">mēģinājums</h2>
-            <p style="text-align: start;"> gcgfkfykyl,yfydftd</i></p>          
+            <img src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg" alt="W3Schools.com" width="504" height="500">
+            <p><a href="https://rag.lv/">Rīgas Angļu ģimnāzijas mājaslapa</a></p>
+            <p style="text-align: start;"> gcgfkfykyl,yfydftd</i></p>     
+            <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>  
+    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    <p>NUJXSAHLUACUJHNWUIHNUJCHUWICH</p>
+    <button onclick="pasleptSaturu()"> Rādīt mazāk</button>     
             <ul>
               <li><b>viens</b></li>
               <li><b>divi </b></li>
@@ -77,15 +92,27 @@
              <table style="border-collapse: collapse; border: 1px solid black;">
               <tr>
 <td>viens</td>
+</tr>
+<tr>
 <td>divi</td>
+</tr>
+<tr>
 <td>trīs</td>
 </tr>
 <tr>
 <td>četri</td>
+</tr>
+<tr>
 <td>pieci</td>
+</tr>
+<tr>
 <td>seši</td>
 </tr>
              </table>
+             <p>1. jā</p>
+             <p>2. nē</p>
+             <p>3. varbūt</p>
+           </div>
           </div>
           <div class="col" style="text-align-last: right;">
             <img src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg" class="img-fluid" alt="kutkas" >
@@ -94,10 +121,10 @@
 
             <div class="row text-center m-5">
               <div class="col">
-                <button type= "button" class = "btn  btn-success btn-lg " onclick="radītSaturu()">Radīt Saturu</button>
+                <button type= "button" class = "btn  btn-success btn-lg " onclick="RadmaisSaturs()">Radīt Saturu</button>
               </div>
               <div class="col">
-                <button type= "button" class = "btn  btn-success btn-lg " onclick="slēptSaturs()">Slēpt Saturs</button>
+                <button type= "button" class = "btn  btn-success btn-lg " onclick="paslēptSaturu()">Slēpt Saturs</button>
               </div>
               <div class="col">
                 <button type= "button" class = "btn  btn-success btn-lg " onclick="mainītAttēlu()">Mainīt Attēlu</button>
